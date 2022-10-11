@@ -1,0 +1,45 @@
+.nav {
+  position: relative;
+  display: flex;
+  max-height: --nav-height;
+  color: #0058ff;
+  background-color: transparent;
+  padding-inline: var(--main-padding);
+}
+
+.logo_container {
+  margin: 1rem 0  0 1.5rem;
+  height: 6.25em; 
+}
+
+.logo {
+  width: 6.25em;
+  margin-left: 0.5rem;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+  text-decoration: none;
+  list-style-type:none;
+  justify-content: center;
+  align-items: center;
+}
+
+.links > li{
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: var(--secondary);
+}
+
+.links > .login{
+  color: var(--primary);
+}
+
+
+@media (max-width: 960px) {
+  .nav {
+    padding-inline: var(--main-padding-mobile);
+  }
+}
